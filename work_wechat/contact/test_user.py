@@ -30,13 +30,16 @@ class TestUser:
 
 
     def test_create_by_template(self):
-        uid = "shuaijie_"+ str(time.time())
+        # department_id=30
+        uid = str(time.time_ns())
         mobile = str(time.time()).replace(".","")[0:11]
         data = str(Utlis.parse("user_create.json",{
-            "name":uid,
+            "userid": uid,
+            "name": "Work_Shuaijie"+uid,
             "title": "master",
-            "email": "1@1.com",
+            "email": mobile+"qq.com",
             "mobile": mobile
+            # "department": department_id
         }))
         data=data.encode("UTF-8")
         r = requests.post("https://qyapi.weixin.qq.com/cgi-bin/user/create",
@@ -56,5 +59,15 @@ class TestUser:
 
 
     def test_get_user(self):
-        print(Utlis.parse("user_create.json",{"name":"李四", "title": "校长", "email": "1@1.com"}))
+        # print(Utlis.parse("user_create.json",{"name":"李四", "title": "校长", "mail": "1@1.com"}))
+        uid = str(time.time_ns())
+        mobile = str(time.time()).replace(".", "")[0:11]
+        print(str(Utlis.parse("user_create.json",{
+            "userid": uid,
+            "name": "Work_Shuaijie"+uid,
+            "title": "master",
+            "email": mobile+"qq.com",
+            "mobile": mobile
+            # "department": department_id
+        })))
 
