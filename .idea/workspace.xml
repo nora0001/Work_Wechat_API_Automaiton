@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ea5ccb4-0489-45da-86aa-c48daaa382d1" name="Default Changelist" comment="add API demo">
+    <list default="true" id="3ea5ccb4-0489-45da-86aa-c48daaa382d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_wechat/contact/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/contact/test_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_wechat/contact/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/contact/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_wechat/contact/user_create.json" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/contact/user_create.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,37 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_user.TestUser.test_create_by_template">
-    <configuration name="pytest for test_department.TestDepartment.test_get" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="API Testing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_wechat/contact" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_department.TestDepartment.test_get&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_request.TestRequests.test_case" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="API Testing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_request.TestRequests.test_case&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_user.TestUser.test_create_by_real">
     <configuration name="pytest for test_user.TestUser.test_create" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,6 +48,21 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_user.TestUser.test_create&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_user.TestUser.test_create_by_real" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="API Testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_wechat/contact" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user.TestUser.test_create_by_real&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -111,13 +96,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_user.TestUser.test_list" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="API Testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_wechat/contact" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user.TestUser.test_list&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_user.TestUser.test_create_by_template" />
+        <item itemvalue="Python tests.pytest for test_user.TestUser.test_create_by_real" />
         <item itemvalue="Python tests.pytest for test_user.TestUser.test_get_user" />
-        <item itemvalue="Python tests.pytest for test_request.TestRequests.test_case" />
+        <item itemvalue="Python tests.pytest for test_user.TestUser.test_list" />
         <item itemvalue="Python tests.pytest for test_user.TestUser.test_create" />
-        <item itemvalue="Python tests.pytest for test_department.TestDepartment.test_get" />
+        <item itemvalue="Python tests.pytest for test_user.TestUser.test_create_by_template" />
       </list>
     </recent_temporary>
   </component>
@@ -132,21 +132,30 @@
       <option name="presentableId" value="Default" />
       <updated>1605930807487</updated>
     </task>
+    <task id="LOCAL-00001" summary="脚手架代码">
+      <created>1612445368335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612445368335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add API demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add API demo" />
+    <MESSAGE value="脚手架代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="脚手架代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="70" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605932034773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="70" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605932034773" />
-    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1612012121382">
+    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1612445367466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612012121382" />
+    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612445367466" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1611928516974">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -155,22 +164,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="308" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1611997952687" />
-    <state width="1412" height="89" key="GridCell.Tab.0.bottom" timestamp="1612444711845">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1612449265981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1412" height="89" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612444711845" />
-    <state width="1412" height="89" key="GridCell.Tab.0.center" timestamp="1612444711835">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612449265981" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1612449265981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1412" height="89" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612444711835" />
-    <state width="1412" height="89" key="GridCell.Tab.0.left" timestamp="1612444711835">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612449265981" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1612449265981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1412" height="89" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612444711835" />
-    <state width="1412" height="89" key="GridCell.Tab.0.right" timestamp="1612444711835">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612449265981" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1612449265981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1412" height="89" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612444711835" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612449265981" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1607852278761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,9 +200,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612014725459" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612011838256">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612445372824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612011838256" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612445372824" />
   </component>
 </project>

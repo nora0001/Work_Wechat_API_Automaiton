@@ -1,3 +1,4 @@
+import logging
 import time
 import requests
 
@@ -9,7 +10,6 @@ from work_wechat.contact.utlis import Utlis
 
 
 class TestUser:
-    depart_id=1
     @classmethod
     def setup_class(cls):
         #todo: create depart
@@ -17,57 +17,52 @@ class TestUser:
 
 
     def test_create(self):
-        uid=str(time.time())
+        uid=str(time.time_ns())
         data ={
             "userid": uid,
-            "name": uid,
-            "department": [self.depart_id]
+            "name": "Work_Shuaijie"+uid,
+            "email":uid + "@testerhome.com"
         }
         r = self.user.create(data)
+        logging.debug(r)
+        assert r['errcode']==0
 
-        print(r)
-        # assert r['errcode']==0
 
+    def test_create_by_real(self):
 
-    def test_create_by_template(self):
-        # department_id=30
         uid = str(time.time_ns())
         mobile = str(time.time()).replace(".","")[0:11]
         data = str(Utlis.parse("user_create.json",{
             "userid": uid,
-            "name": "Work_Shuaijie"+uid,
+            "name": "Tem_Shuaijie"+uid,
             "title": "master",
             "email": mobile+"qq.com",
-            "mobile": mobile
-            # "department": department_id
+            "mobile": mobile,
         }))
         data=data.encode("UTF-8")
-        r = requests.post("https://qyapi.weixin.qq.com/cgi-bin/user/create",
-                          params={"access_token" : Weixin.get_token()},
-                          data=data,
-                          headers={"content-type":"application/json; charset=UTF-8"}
-                          ).json()
-        print(r)   
+        r=self.user.create(data=data)
+        logging.debug(r)
+        assert r['errcode']==0
 
 
     def test_list(self):
         r=self.user.list()
-
-        r=self.user.list(department_id=65)
-
-        print(r)
+        logging.debug(r)
+        # print(r)
+        r = self.user.list(department_id=2)
+        logging.debug(r)
 
 
     def test_get_user(self):
         # print(Utlis.parse("user_create.json",{"name":"李四", "title": "校长", "mail": "1@1.com"}))
         uid = str(time.time_ns())
-        mobile = str(time.time()).replace(".", "")[0:11]
+        # mobile = str(time.time()).replace(".", "")[0:11]
+        mobile = Utlis.udid()
         print(str(Utlis.parse("user_create.json",{
             "userid": uid,
             "name": "Work_Shuaijie"+uid,
             "title": "master",
             "email": mobile+"qq.com",
-            "mobile": mobile
-            # "department": department_id
+            "mobile": mobile,
         })))
 
