@@ -1,5 +1,6 @@
 import logging
 
+import pytest
 import requests
 from requests_toolbelt import MultipartEncoder
 
@@ -30,6 +31,7 @@ class Test_Asynch_batch:
         r=self.asyn.batch_replace_depart(data)
         logging.info(r)
         assert r["errcode"]==0
+        return r["jobid"]
 
 
     def test_batch_replace_user(self):
@@ -48,7 +50,7 @@ class Test_Asynch_batch:
         r = self.asyn.batch_replace_user(data)
         logging.info(r)
         assert r["errcode"] == 0
-
+        return r["jobid"]
 
     def test_batch_update_user(self):
         type = "file"
@@ -64,7 +66,20 @@ class Test_Asynch_batch:
         }
         r=self.asyn.batch_update_user(data)
         logging.info(r)
-        assert r["errcode"]==0
+        assert r["errcode"] == 0
+        return r["jobid"]
+
+
+    def test_get_batch_result(self):
+         jobid_1 = self.test_batch_replace_depart()
+         jobid_2 = self.test_batch_replace_user()
+         jobid_3 = self.test_batch_update_user()
+         jobid=[jobid_1,jobid_2,jobid_3]
+         for i in jobid:
+            print(i)
+            r=self.asyn.get_batch_result(i)
+            logging.info(r)
+            # assert r["errcode"]==0
 
 
 

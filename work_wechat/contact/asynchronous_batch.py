@@ -23,6 +23,13 @@ class Asynch(object):
                              json=dict,
                              data=data).json()
 
+    def get_batch_result(self,jobid):
+        return requests.get("https://qyapi.weixin.qq.com/cgi-bin/batch/getresult",
+                            params={"access_token":Weixin.get_token(),
+                                    "jobid":jobid}
+                            ).json()
+
+
 
 
 
