@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ea5ccb4-0489-45da-86aa-c48daaa382d1" name="Default Changelist" comment="重构department,add,update,delete,search">
+    <list default="true" id="3ea5ccb4-0489-45da-86aa-c48daaa382d1" name="Default Changelist" comment="add test case for &quot;tag&quot; ,add,update,delete,search">
+      <change afterPath="$PROJECT_DIR$/work_wechat/contact/asynchronous_batch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_wechat/contact/test_asynchronous_batch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_wechat/contact/Asynchronous batch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_wechat/contact/test_Asynchronous batch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work_wechat/contact/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/contact/token.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kaFU1lJLTq01n1CRs5CHbXzqgK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,8 +44,8 @@
       <recent name="D:\Program Files (x86)\API Testing\work_wechat\contact" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_tag.Test_tag">
-    <configuration name="pytest for test_tag.Test_tag" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_asynchronous_batch.Test_Asynch_batch">
+    <configuration name="pytest for test_asynchronous_batch.Test_Asynch_batch" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,11 +56,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tag.Test_tag&quot;" />
+      <option name="_new_target" value="&quot;test_asynchronous_batch.Test_Asynch_batch&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_tag.Test_tag.test_add_tag_user_t005" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_depart" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,11 +71,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tag.Test_tag.test_add_tag_user_t005&quot;" />
+      <option name="_new_target" value="&quot;test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_depart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_tag.Test_tag.test_create_tag_t001" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,11 +86,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tag.Test_tag.test_create_tag_t001&quot;" />
+      <option name="_new_target" value="&quot;test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_tag.Test_tag.test_delete_tag_t003" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_update_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,32 +101,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tag.Test_tag.test_delete_tag_t003&quot;" />
+      <option name="_new_target" value="&quot;test_asynchronous_batch.Test_Asynch_batch.test_batch_update_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_tag.Test_tag.test_get_tag_list" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_media.Test_Media.test_get_media_id" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="API Testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_wechat/contact" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_wechat/media" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tag.Test_tag.test_get_tag_list&quot;" />
+      <option name="_new_target" value="&quot;test_media.Test_Media.test_get_media_id&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_tag.Test_tag" />
-        <item itemvalue="Python tests.pytest for test_tag.Test_tag.test_delete_tag_t003" />
-        <item itemvalue="Python tests.pytest for test_tag.Test_tag.test_create_tag_t001" />
-        <item itemvalue="Python tests.pytest for test_tag.Test_tag.test_get_tag_list" />
-        <item itemvalue="Python tests.pytest for test_tag.Test_tag.test_add_tag_user_t005" />
+        <item itemvalue="Python tests.pytest for test_asynchronous_batch.Test_Asynch_batch" />
+        <item itemvalue="Python tests.pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_update_user" />
+        <item itemvalue="Python tests.pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_user" />
+        <item itemvalue="Python tests.pytest for test_asynchronous_batch.Test_Asynch_batch.test_batch_replace_depart" />
+        <item itemvalue="Python tests.pytest for test_media.Test_Media.test_get_media_id" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612703003629</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add test case for &quot;tag&quot; ,add,update,delete,search">
+      <created>1612793736989</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612793736989</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,7 +177,8 @@
     <MESSAGE value="脚手架代码" />
     <MESSAGE value="重构user" />
     <MESSAGE value="重构department,add,update,delete,search" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构department,add,update,delete,search" />
+    <MESSAGE value="add test case for &quot;tag&quot; ,add,update,delete,search" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test case for &quot;tag&quot; ,add,update,delete,search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="70" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605932034773">
@@ -174,10 +189,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="148" y="104" width="1248" height="592" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1612592002489" />
-    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1612703504052">
+    <state x="484" y="52" key="#pytest_for_test_Asynchronous_batch.Test_Asynch_batch.test_get_media_id" timestamp="1613309179574">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612703504052" />
+    <state x="484" y="52" key="#pytest_for_test_Asynchronous_batch.Test_Asynch_batch.test_get_media_id/0.0.1536.824@0.0.1536.824" timestamp="1613309179574" />
+    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1613303306936">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613303306936" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1612700448733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -186,22 +205,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="308" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1611997952687" />
-    <state width="1127" height="187" key="GridCell.Tab.0.bottom" timestamp="1612793675473">
+    <state width="1515" height="2" key="GridCell.Tab.0.bottom" timestamp="1613392548237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1127" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612793675473" />
-    <state width="1127" height="187" key="GridCell.Tab.0.center" timestamp="1612793675473">
+    <state width="1515" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613392548237" />
+    <state width="1515" height="2" key="GridCell.Tab.0.center" timestamp="1613392548237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1127" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612793675473" />
-    <state width="1127" height="187" key="GridCell.Tab.0.left" timestamp="1612793675473">
+    <state width="1515" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613392548237" />
+    <state width="1515" height="2" key="GridCell.Tab.0.left" timestamp="1613392548237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1127" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612793675473" />
-    <state width="1127" height="187" key="GridCell.Tab.0.right" timestamp="1612793675473">
+    <state width="1515" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613392548237" />
+    <state width="1515" height="2" key="GridCell.Tab.0.right" timestamp="1613392548237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1127" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612793675473" />
+    <state width="1515" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613392548237" />
     <state width="1412" height="245" key="GridCell.Tab.1.bottom" timestamp="1612597683585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -218,13 +237,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1412" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612597683585" />
-    <state x="272" y="57" key="SettingsEditor" timestamp="1612792708651">
+    <state x="272" y="57" key="SettingsEditor" timestamp="1613313223553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612792708651" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612703007075">
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613313223553" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1612793746649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612703007075" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612793746649" />
   </component>
 </project>
