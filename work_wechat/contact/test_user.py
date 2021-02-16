@@ -13,7 +13,6 @@ class TestUser:
     depart_id = 30
     @classmethod
     def setup_class(cls):
-        #todo: create depart
         cls.user =User()
 
     def test_create_user_t001(self):
