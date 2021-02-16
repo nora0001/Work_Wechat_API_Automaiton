@@ -15,7 +15,8 @@ class Weixin:
 
     @classmethod
     def get_token_new(cls):
-        conf = yaml.safe_load(open("../contact/weixin.yaml"))
+        filepath="../contact/contact.yaml"
+        conf = yaml.safe_load(open(filepath))
         print(conf["env"])
         r = requests.get("https://qyapi.weixin.qq.com/cgi-bin/gettoken",
                          params={"corpid": conf["env"]["corpid"],

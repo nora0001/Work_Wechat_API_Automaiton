@@ -2,11 +2,11 @@ import logging
 import time
 import requests
 
-from work_wechat.contact.token import Weixin
 import pystache
 
+from work_wechat.conf.token import Weixin
 from work_wechat.contact.user import User
-from work_wechat.contact.utlis import Utlis
+from work_wechat.conf.utlis import Utlis
 
 
 class TestUser:

@@ -1,6 +1,6 @@
 import requests
 
-from work_wechat.contact.token import Weixin
+from work_wechat.conf.token import Weixin
 
 
 class Asynch(object):

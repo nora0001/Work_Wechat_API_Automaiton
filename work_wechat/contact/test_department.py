@@ -8,9 +8,8 @@ import requests
 from regex import Regex
 
 from work_wechat.contact.department import Department
-from work_wechat.contact.token import Weixin
 from work_wechat.contact.user import User
-from work_wechat.contact.utlis import Utlis
+from work_wechat.conf.utlis import Utlis
 
 
 logging.getLogger().setLevel(logging.INFO)
