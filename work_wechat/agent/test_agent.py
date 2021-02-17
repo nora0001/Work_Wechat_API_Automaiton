@@ -3,7 +3,6 @@ import logging
 from work_wechat.agent.agent import Agent
 from work_wechat.conf.utlis import Utlis
 
-
 class Test_agent(object):
     agentid = "1000002"
     agent_name = "caijingzhushou"

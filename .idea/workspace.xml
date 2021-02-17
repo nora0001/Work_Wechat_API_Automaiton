@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea5ccb4-0489-45da-86aa-c48daaa382d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work_wechat/agent/test_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/agent/test_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_wechat/conf/test_weixin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_wechat/conf/weixin_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_wechat/conf/weixin_token.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613544130941</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update weixin_token.py">
+      <created>1613545174485</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613545174485</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -211,7 +217,8 @@
     <MESSAGE value="add test cases and test file for &quot;asynchronous_batch&quot;;&#10;add &quot;media&quot; package" />
     <MESSAGE value="add test case for &quot;asynchronous_batch&quot;;" />
     <MESSAGE value="update 'conf' and test cases for agent;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 'conf' and test cases for agent;" />
+    <MESSAGE value="update weixin_token.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update weixin_token.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="70" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605932034773">
@@ -234,10 +241,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="52" key="#pytest_for_test_Asynchronous_batch.Test_Asynch_batch.test_get_media_id/0.0.1536.824@0.0.1536.824" timestamp="1613309179574" />
-    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1613544130038">
+    <state x="410" y="0" key="CommitChangelistDialog2" timestamp="1613545183058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613544130038" />
+    <state x="410" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613545183058" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1612700448733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
