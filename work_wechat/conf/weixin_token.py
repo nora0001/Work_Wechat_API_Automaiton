@@ -8,8 +8,8 @@ class Weixin_Token:
     _token = ""
     @classmethod
     def get_token(cls,agent):
-        if len(cls._token)== 0:
-            cls._token = cls.get_token_new(agent)
+        # if len(cls._token)== 0:
+        cls._token = cls.get_token_new(agent)
         return cls._token
 
 
@@ -23,7 +23,8 @@ class Weixin_Token:
                              ).json()
         corpid=conf["env"]["corpid"]
         secret=conf["env"]["agent"][agent]["secret"]
-        m={"corpid":corpid,"agentsecret":secret}
+        m={"corpid":corpid,"agentsecret":secret,"access_token":r["access_token"]}
+
         print(m)
         return r["access_token"]
 
