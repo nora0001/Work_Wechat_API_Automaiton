@@ -5,7 +5,7 @@ def test_get_token():
     assert False
 
 
-class TestWeixin:
+class TestAgentToken:
     def test_get_token(self):
-        print(Weixin_Token.get_token("contact"))
-        assert Weixin_Token.get_token("contact") !=""
+        agent="Adr"
+        print(Weixin_Token.get_token(agent))

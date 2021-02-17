@@ -1,0 +1,23 @@
+{
+  "agentid": "{{agent_id}}",
+  "type": "list",
+  "list": {
+    "items": [
+      {
+        "title": "智慧校园新版设计的小程序要来啦",
+        "jump_url": "http://www.qq.com",
+        "pagepath": "pages/index"
+      },
+      {
+        "title": "植物百科，这是什么花",
+        "jump_url": "http://www.qq.com",
+        "pagepath": "pages/index"
+      },
+      {
+        "title": "周一升旗通知，全体学生必须穿校服",
+        "jump_url": "http://www.qq.com",
+        "pagepath": "pages/index"
+      }
+    ]
+  }
+}

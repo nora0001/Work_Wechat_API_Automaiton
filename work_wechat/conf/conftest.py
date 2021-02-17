@@ -1,9 +1,9 @@
 
 import pytest
 
-from work_wechat.conf.token import Weixin
+from work_wechat.conf.weixin_token import Weixin_Token
 
 
 @pytest.fixture(scope="session")
 def token():
-    return Weixin.get_token_new()
+    return Weixin_Token.get_token_new()
