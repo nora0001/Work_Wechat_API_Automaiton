@@ -1,4 +1,4 @@
-from work_wechat.conf.weixin_token import Weixin_Token
+from work_wechat.conf.weixin import Weixin
 
 
 def test_get_token():
@@ -8,4 +8,4 @@ def test_get_token():
 class TestAgentToken:
     def test_get_token(self):
         agent="Adr"
-        print(Weixin_Token.get_token(agent))
+        print(Weixin.get_token(agent))

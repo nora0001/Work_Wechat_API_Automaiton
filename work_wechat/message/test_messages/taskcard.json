@@ -1,0 +1,30 @@
+{
+  "touser": "{{user}}",
+  "toparty": "{{party}}",
+  "totag": "{{tag}}",
+  "msgtype": "taskcard",
+  "agentid": "{{agent_id}}",
+  "taskcard": {
+    "title": "周铁柱的礼物申请",
+    "description": "礼品：A31茶具套装<br>用途：赠与小黑科技张总经理",
+    "url": "https:www.baidu.com",
+    "task_id": "{{taskid}}",
+    "btn": [
+      {
+        "key": "key111",
+        "name": "批准",
+        "replace_name": "已批准",
+        "color": "red",
+        "is_bold": true
+      },
+      {
+        "key": "key222",
+        "name": "驳回",
+        "replace_name": "已驳回"
+      }
+    ]
+  },
+  "enable_id_trans": 0,
+  "enable_duplicate_check": 0,
+  "duplicate_check_interval": 1800
+}

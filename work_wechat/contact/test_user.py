@@ -4,7 +4,7 @@ import requests
 
 import pystache
 
-from work_wechat.conf.weixin_token import Weixin_Token
+from work_wechat.conf.weixin import Weixin
 from work_wechat.contact.user import User
 from work_wechat.conf.utlis import Utlis
 
@@ -101,9 +101,9 @@ class TestUser:
         print(data)
         print(type(data))
         r= requests.post("https://qyapi.weixin.qq.com/cgi-bin/user/update",
-                             params={"access_token": Weixin_Token.get_token()},
-                             data=data
-                             ).json()
+                         params={"access_token": Weixin.get_token()},
+                         data=data
+                         ).json()
         # r = self.user.update(self, data)
         logging.info(r)
         assert r["errcode"] == 0

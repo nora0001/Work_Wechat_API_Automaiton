@@ -1,0 +1,15 @@
+{
+  "touser": "{{user}}",
+  "toparty": "{{party}}",
+  "totag": "{{tag}}",
+  "msgtype": "video",
+  "agentid": "{{agent_id}}",
+  "video": {
+    "media_id": "{{mediaid}}",
+    "title": "Title",
+    "description": "Description"
+  },
+  "safe": 0,
+  "enable_duplicate_check": 0,
+  "duplicate_check_interval": 1800
+}

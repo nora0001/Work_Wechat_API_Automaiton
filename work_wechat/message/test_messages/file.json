@@ -1,0 +1,13 @@
+{
+   "touser" : "{{user}}",
+   "toparty" : "{{party}}",
+   "totag" : "{{tag}}",
+   "msgtype" : "file",
+   "agentid" : "{{agent_id}}",
+   "file" : {
+        "media_id" : "{{mediaid}}"
+   },
+   "safe":0,
+   "enable_duplicate_check": 0,
+   "duplicate_check_interval": 1800
+}

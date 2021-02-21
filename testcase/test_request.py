@@ -1,4 +1,6 @@
 import json
+import random
+import string
 import time
 
 import requests
@@ -66,6 +68,14 @@ class TestRequests(object):
         # logging.info(r.text)
         # logging.info(json.dumps(r.json(),indent=2))
         #
+    def test_random(self):
+        charat="\"_-@\""
+
+        print("".join([random.choice(string.ascii_letters+"\"_-@\"")
+                       if random.randint(0, 1)
+                       else random.choice(string.digits)
+                       for i in range(20)]))
+
 #todo
 """
 把部门，人员，消息推动，应用管理，素材，OA 的API 全部实现自动化测试
