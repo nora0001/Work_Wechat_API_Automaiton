@@ -9,17 +9,11 @@ from work_wechat.message.message import Message
 
 
 class Test_Send_Message(object):
-    agent_1="caijingzhushou"
-    agentid_1="1000002"
+    agent="caijingzhushou"
+    agentid="1000002"
 
-    agent_2 = "HR"
-    agentid_2 = "1000003"
-
-    agent_3 = "IT Support"
-    agentid_3 = "1000004"
-
-    agent_4 = "Adr"
-    agentid_4 = "1000005"
+    agent_Adr="Adr"
+    agentid_Adr="1000005"
 
     user_one="RenShuaijie"
     user_two="lindon"
@@ -30,11 +24,12 @@ class Test_Send_Message(object):
         cls.media = Media()
 
     def test_text(self):
-        agent = self.agent_1
+        agent = self.agent
         user=self.user_one
-        agentid=self.agentid_1
+        agentid=self.agentid
+        path="../message/test_messages/text.json"
 
-        data = str(Utlis.parse("test_messages/text.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -47,18 +42,18 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_image(self):
-        agent = self.agent_2
+        agent = self.agent
         user=self.user_one
-        agentid=self.agentid_2
+        agentid=self.agentid
+        path="../message/test_messages/image.json"
 
         type = "image"
-        file = "../agent/agent_image.png"
-        m = MultipartEncoder(
-            fields={'file': ('agent_image.png', open(file, 'rb'), 'image/png')}
-        )
-        r = self.media.media_temp_upload(agent, m, type, m.content_type)
-        media_id = r["media_id"]
-        data = str(Utlis.parse("test_messages/image.json",
+        filepath = "../agent/agent_image.png"
+        filename="agent_image.png"
+
+        media_id = self.media.get_media_id(agent,filename,filepath,type)
+
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -66,24 +61,23 @@ class Test_Send_Message(object):
                                    "agent_id": agentid,
                                    "mediaid": media_id
                                }))
+
         data = data.encode("UTF-8")
         r = self.message.send_message(agent, data=data)
         logging.info(r)
         assert r["errcode"] == 0
 
     def test_voice(self):
-        agent = self.agent_3
+        agent = self.agent
         user=self.user_two
-        agentid=self.agentid_3
-
+        agentid=self.agentid
+        path="../message/test_messages/voice.json"
         type = "voice"
-        file = "test_messages/words.amr"
-        m = MultipartEncoder(
-            fields={'file': ('words.amr', open(file, 'rb'), 'voice')}
-        )
-        r = self.media.media_temp_upload(agent, m, type, m.content_type)
-        media_id = r["media_id"]
-        data = str(Utlis.parse("test_messages/voice.json",
+        filepath = "test_messages/words.amr"
+        filename="word.amr"
+
+        media_id=self.media.get_media_id(agent,filename,filepath,type)
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -97,18 +91,15 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_video(self):
-        agent = self.agent_4
+        agent = self.agent
         user="RenShuaiJie|lindon"
-        agentid=self.agentid_4
-
+        agentid=self.agentid
+        path="../message/test_messages/video.json"
         type = "video"
-        file = "test_messages/EnglishLearning.mp4"
-        m = MultipartEncoder(
-            fields={'file': ('EnglishLearning.mp4', open(file, 'rb'), 'video')}
-        )
-        r = self.media.media_temp_upload(agent, m, type, m.content_type)
-        media_id = r["media_id"]
-        data = str(Utlis.parse("test_messages/video.json",
+        filepath = "../message/test_messages/EnglishLearning.mp4"
+        filename = "EnglisheLearning.mp4"
+        media_id= self.media.get_media_id(agent,filename,filepath,type)
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -122,18 +113,16 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_file(self):
-        agent = self.agent_2
+        agent = self.agent
         user="RenShuaiJie|lindon"
-        agentid=self.agentid_2
-
+        agentid=self.agentid
+        path="../message/test_messages/file.json"
         type = "file"
-        file = "test_messages/雅思听力-听力场景词汇汇总.pdf"
-        m = MultipartEncoder(
-            fields={'file': ('雅思听力-听力场景词汇汇总.pdf', open(file, 'rb'), 'file')}
-        )
-        r = self.media.media_temp_upload(agent, m, type, m.content_type)
-        media_id = r["media_id"]
-        data = str(Utlis.parse("test_messages/file.json",
+        filepath = "../message/test_messages/雅思听力-听力场景词汇汇总.pdf"
+        filename="雅思听力-听力场景词汇汇总.pdf"
+        media_id = self.media.get_media_id(agent,filename,filepath,type)
+
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -147,12 +136,12 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_textcard(self):
-        agent = self.agent_1
+        agent = self.agent
         user="RenShuaiJie|lindon"
-        agentid=self.agentid_1
-
+        agentid=self.agentid
+        path="../message/test_messages/textcard.json"
         type = "file"
-        data = str(Utlis.parse("test_messages/textcard.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -165,12 +154,12 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_news(self):
-        agent = self.agent_3
+        agent = self.agent
         user="lindon"
-        agentid=self.agentid_3
-
+        agentid=self.agentid
+        path="../message/test_messages/news.json"
         type = "file"
-        data = str(Utlis.parse("test_messages/news.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -183,18 +172,15 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_mpnews(self):
-        agent = self.agent_2
+        agent = self.agent
         user="RenShuaiJie|lindon"
-        agentid=self.agentid_2
-
+        agentid=self.agentid
+        path="../message/test_messages/mpnews.json"
         type = "image"
-        file = "../agent/agent_image.png"
-        m = MultipartEncoder(
-            fields={'file': ('agent_image.png', open(file, 'rb'), 'image/png')}
-        )
-        r = self.media.media_temp_upload(agent, m, type, m.content_type)
-        media_id = r["media_id"]
-        data = str(Utlis.parse("test_messages/mpnews.json",
+        filepath = "../agent/agent_image.png"
+        filename="agent_image.png"
+        media_id=self.media.get_media_id(agent,filename,filepath,type)
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -208,12 +194,12 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_markdown(self):
-        agent = self.agent_1
+        agent = self.agent
         user="RenShuaiJie|lindon"
-        agentid=self.agentid_1
-
+        agentid=self.agentid
+        path="../message/test_messages/markdown.json"
         type = "markdown"
-        data = str(Utlis.parse("test_messages/markdown.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -226,12 +212,12 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_miniprogram_notice(self):
-        agent = self.agent_4
+        agent = self.agent_Adr
         user="RenShuaiJie|lindon"
-
+        path="../message/test_messages/miniprogram_notice.json"
         app_id = "wxcbcd6c3340a4b95d"
         type = "file"
-        data = str(Utlis.parse("test_messages/miniprogram_notice.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -244,17 +230,17 @@ class Test_Send_Message(object):
         assert r["errcode"] == 0
 
     def test_taskcard(self):
-        agent = self.agent_2
+        agent = self.agent_Adr
         user=self.user_one
-        agentid=self.agentid_2
-
+        agentid=self.agentid_Adr
+        path="../message/test_messages/taskcard.json"
         type = "taskcard"
         taskid = "".join([random.choice(string.ascii_letters + "\"_-@\"")
                           if random.randint(0, 1)
                           else random.choice(string.digits)
                           for i in range(10)])
         print(taskid)
-        data = str(Utlis.parse("test_messages/taskcard.json",
+        data = str(Utlis.parse(path,
                                {
                                    "user": user,
                                    "party": "",
@@ -269,8 +255,8 @@ class Test_Send_Message(object):
         return taskid
 
     def test_update_taskcard_yes(self):
-        agent = self.agent_2
-        agentid=self.agentid_2
+        agent = self.agent_Adr
+        agentid=self.agentid_Adr
 
         userid=self.user_one
 
@@ -286,8 +272,8 @@ class Test_Send_Message(object):
         r=self.message.update_taskcard(agent,data)
 
     def test_update_taskcard_no(self):
-        agent = self.agent_2
-        agentid = self.agentid_2
+        agent = self.agent_Adr
+        agentid = self.agentid_Adr
 
         userid = self.user_one
 

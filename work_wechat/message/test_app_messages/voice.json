@@ -1,12 +1,7 @@
 {
-  "touser": "{{user}}",
-  "toparty": "{{party}}",
-  "totag": "{{tag}}",
-  "msgtype": "voice",
-  "agentid": "{{agent_id}}",
-  "voice": {
-    "media_id": "{{mediaid}}"
-  },
-  "enable_duplicate_check": 0,
-  "duplicate_check_interval": 1800
+   "chatid" : "{{chat_id}}",
+   "msgtype" : "voice",
+   "voice" : {
+        "media_id" : "{{media_id}}"
+   }
 }

@@ -1,16 +1,11 @@
 {
-  "touser": "{{user}}",
-  "toparty": "{{party}}",
-  "totag": "{{tag}}",
-  "msgtype": "textcard",
-  "agentid": "{{agent_id}}",
-  "textcard": {
-    "title": "领奖通知",
-    "description": "<div class=\"gray\">2016年9月26日</div> <div class=\"normal\">恭喜你抽中iPhone 7一台，领奖码：xxxx</div><div class=\"highlight\">请于2016年10月10日前联系行政同事领取</div>",
-    "url": "URL",
-    "btntxt": "更多"
-  },
-  "enable_id_trans": 0,
-  "enable_duplicate_check": 0,
-  "duplicate_check_interval": 1800
+    "chatid": "{{chat_id}}",
+    "msgtype":"textcard",
+    "textcard":{
+        "title" : "领奖通知",
+        "description" : "<div class=\"gray\">2016年9月26日</div> <div class=\"normal\"> 恭喜你抽中iPhone 12一台，领奖码:520258</div><div class=\"highlight\">请于2016年10月10日前联系行 政同事领取</div>",
+        "url":"https://work.weixin.qq.com/",
+        "btntxt":"更多"
+    },
+    "safe":0
 }

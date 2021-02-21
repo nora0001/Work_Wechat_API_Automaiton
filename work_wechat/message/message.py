@@ -37,9 +37,11 @@ class Message(object):
 
     def send_app_chat(self,agent=None,dict=None,data=None):
         return requests.post("https://qyapi.weixin.qq.com/cgi-bin/appchat/send",
-                             params={"access_token":Weixin.get_token(agent)}
+                             params={"access_token":Weixin.get_token(agent)},
+                             json=dict,
+                             data=data
                              ).json()
-    
+
     def get_message_statistics(self,agent=None,dict=None,data=None):
         return requests.post("https://qyapi.weixin.qq.com/cgi-bin/message/get_statistics",
                              params={"access_token": Weixin.get_token(agent)},

@@ -1,15 +1,10 @@
 {
-  "touser": "{{user}}",
-  "toparty": "{{party}}",
-  "totag": "{{tag}}",
-  "msgtype": "video",
-  "agentid": "{{agent_id}}",
-  "video": {
-    "media_id": "{{mediaid}}",
-    "title": "Title",
-    "description": "Description"
-  },
-  "safe": 0,
-  "enable_duplicate_check": 0,
-  "duplicate_check_interval": 1800
+   "chatid" : "{{chat_id}}",
+   "msgtype" : "video",
+   "video" : {
+       "media_id" : "{{media_id}}",
+       "description" : "This is a demo to tell you how to get start for API testing",
+       "title": "APIQuickStart"
+   },
+   "safe":0
 }

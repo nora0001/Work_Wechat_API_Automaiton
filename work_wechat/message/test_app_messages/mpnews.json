@@ -1,23 +1,17 @@
 {
-  "touser": "{{user}}",
-  "toparty": "{{party}}",
-  "totag": "{{tag}}",
-  "msgtype": "mpnews",
-  "agentid": "{{agent_id}}",
-  "mpnews": {
-    "articles": [
-      {
-        "title": "Title",
-        "thumb_media_id": "{{media_id}}",
-        "author": "Author",
-        "content_source_url": "https://www.baidu.com",
-        "content": "\n出发前可查看<a href=\"http://work.weixin.qq.com\">邮件中心视频实况</a>",
-        "digest": "Digest description"
-      }
-    ]
-  },
-  "safe": 0,
-  "enable_id_trans": 0,
-  "enable_duplicate_check": 0,
-  "duplicate_check_interval": 1800
+    "chatid": "{{chat_id}}",
+    "msgtype":"mpnews",
+    "mpnews":{
+        "articles":[
+            {
+                "title": "地球一小时",
+                "thumb_media_id": "{{media_id}}",
+                "author": "Author",
+                "content_source_url": "https://work.weixin.qq.com",
+                "content": "3月24日20:30-21:30 \n办公区将关闭照明一小时，请各部门同事相互转告",
+                "digest": "3月24日20:30-21:30 \n办公区将关闭照明一小时"
+            }
+         ]
+    },
+    "safe":0
 }

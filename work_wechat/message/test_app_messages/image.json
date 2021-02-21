@@ -1,13 +1,8 @@
 {
-  "touser": "{{user}}",
-  "toparty": "{{party}}",
-  "totag": "{{tag}}",
+  "chatid": "{{chat_id}}",
   "msgtype": "image",
-  "agentid": "{{agent_id}}",
   "image": {
-    "media_id": "{{mediaid}}"
+    "media_id": "{{media_id}}"
   },
-  "safe": 0,
-  "enable_duplicate_check": 0,
-  "duplicate_check_interval": 1800
+  "safe": 0
 }
